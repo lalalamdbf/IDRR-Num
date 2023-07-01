@@ -1,0 +1,18 @@
+nohup python train.py \
+  --seed 2333 \
+  --train_dataset_path ../data/conll/train_conll_numerical.pt \
+  --valid_dataset_path ../data/conll/valid_conll_numerical.pt \
+  --test_dataset_path ../data/conll/test_conll_numerical.pt \
+  --blind_dataset_path ../data/conll/blind_conll_numerical.pt \
+  --save_model_dir ../data/dumps/conll/ \
+  --num_rels 14 \
+  --gpu_ids 0 \
+  --epochs 6 \
+  --batch_size 16 \
+  --lr 5e-6 \
+  --downstream_lr 3e-4 \
+  --save_best acc \
+  --encoder roberta \
+  --use_gcn \
+  --gcn_steps 3 \
+  --dropout 0.2 > output.log 2>&1 &

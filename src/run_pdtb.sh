@@ -1,0 +1,17 @@
+nohup python train.py \
+  --seed 2333 \
+  --train_dataset_path ../data/pdtb/train_pdtb_numerical.pt \
+  --valid_dataset_path ../data/pdtb/valid_pdtb_numerical.pt \
+  --test_dataset_path ../data/pdtb/test_pdtb_numerical.pt \
+  --save_model_dir ../data/dumps/pdtb/ \
+  --num_rels 4 \
+  --gpu_ids 0 \
+  --epochs 6 \
+  --batch_size 16 \
+  --lr 5e-6 \
+  --downstream_lr 3e-4 \
+  --save_best f1 \
+  --encoder roberta \
+  --use_gcn \
+  --gcn_steps 3 \
+  --dropout 0.2 > output.log 2>&1 &
