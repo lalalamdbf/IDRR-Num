@@ -136,7 +136,7 @@ python preprocess_conll.py \
     --dataset_file_path ../data/conll/blind_conll.json
 ```
 
-- In the directory of *src*, run the following command to get final numerical datasets file:
+- In the directory of *src*, run the following command to get final numerical files:
 
 ```
 python preprocess_pdtb.py \
