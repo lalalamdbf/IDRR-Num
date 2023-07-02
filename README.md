@@ -2,6 +2,15 @@
 
 This repo contains the PyTorch implementation of Numerical Semantic Modeling For Implicit Discourse Relation Recognition ICASSP 2023.
 
+## Package Dependencies
+
+- tqdm
+- numpy
+- pandas
+- scipy
+- torch = 1.12.0
+- transformers = 4.21.0
+
 ## Data
 
 We use PDTB 2.0 and CoNLL 2016 Shared Task to evaluate our models. If you have bought data from LDC, please put the PDTB data and CoNLL data in *data/pdtb* and *data/conll* respectively.
